@@ -415,7 +415,7 @@ async function runDemo(){
     const fcItems=fcR.body?.items||fcR.body||[];
     const fcArr=Array.isArray(fcItems)?fcItems:[];
     log(`Available FCs: ${JSON.stringify(fcArr.map(f=>({id:f.id,name:f.name})))}`,'dim');
-    const FC_ID=fcArr[0]?.id||10;
+    const FC_ID=fcArr[0]?.id||17;
     log(`✓ Fulfillment center ID: ${FC_ID}`,'success');
     setProgress(8);
 
